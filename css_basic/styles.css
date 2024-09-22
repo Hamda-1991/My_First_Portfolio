@@ -1,0 +1,30 @@
+/* Make the body a flex container with column direction */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make the main a flex container with row direction */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; /* Allow main to take automatic height and width */
+}
+
+/* Style for the article and aside */
+article {
+  flex: 2; /* Takes 2/3 of the width */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+aside {
+  flex: 1; /* Takes 1/3 of the width */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Optional: Add some basic styling for header and footer */
+header,
+footer {
+  padding: 10px;
+  background-color: #f0f0f0; /* Light background for visibility */
+}
